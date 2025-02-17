@@ -28,3 +28,13 @@ source .venv/bin/activate
 
 pip install flask
 pip install flask-cors
+
+## Readme set up
+
+clone the repo
+cd backend
+create a file called config.py
+Add the following:
+HOST = "localhost"
+USER = "root"
+PASSWORD = "your_password"
