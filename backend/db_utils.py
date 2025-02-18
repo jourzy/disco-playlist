@@ -1,8 +1,9 @@
 import mysql.connector
-import os
-from dotenv import load_dotenv
+# import os
+# from dotenv import load_dotenv
+from config import HOST, USER, PASSWORD
 
-load_dotenv()  # Load variables from .env file
+# load_dotenv()  # Load variables from .env file
 
 DB_NAME = "db_disco_playlist"
 TEST_DB_NAME = "db_disco_playlist_test"
@@ -16,9 +17,9 @@ def connect_to_db(db_name=TEST_DB_NAME):
     try:
         # Attempt to connect to the DB using provided credentials
         connection = mysql.connector.connect(
-            host= os.getenv('HOST'),
-            user= os.getenv('USER'),
-            password= os.getenv('PASSWORD'),
+            host= HOST,
+            user= USER,
+            password= PASSWORD,
             database=db_name,
             auth_plugin='mysql_native_password'
         )
