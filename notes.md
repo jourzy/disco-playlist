@@ -38,3 +38,15 @@ Add the following:
 HOST = "localhost"
 USER = "root"
 PASSWORD = "your_password"
+
+
+## Spotify API
+
+
+https://developer.spotify.com/
+login with spotify credentials
+Create an app
+Give it a name and description
+Under "Redirect URIs" type in http://localhost:5173 and confirm by clicking on add, then save the settings.
+5173 as this is the port used by vite.
+
