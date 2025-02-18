@@ -1,6 +1,7 @@
 import React, { JSX, useState } from 'react';
 import disco_ball from './assets/disco_ball.png';
 import './App.css';
+import Tracks from './components/Tracks';
 
 interface Track {
   id: string;
@@ -40,6 +41,7 @@ function App(): JSX.Element {
         <div className="introduction">
           <img src={disco_ball} className="discoball" alt="disco ball" />
           <h1>Welcome to Disco DJ</h1>
+          <Tracks />
           <label htmlFor="song-name-input" className="search-label">Song name:</label>
           <input
             type="text"
