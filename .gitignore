@@ -1,3 +1,4 @@
 /backend/config.py
 backend/__pycache__/
 frontend/disco-dj/node_modules/
+backend/.env
